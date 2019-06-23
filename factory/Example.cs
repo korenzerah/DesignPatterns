@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace DesignPatterns
 {
-    class Program
+    class MainOfFactory
     {
-        static void Main(string[] args)
+        static void Example(string[] args)
         {
             Console.WriteLine(VehicleFactory.CreateVehicle("Car").ToString());
             Console.WriteLine(VehicleFactory.CreateVehicle("Tank").ToString());
