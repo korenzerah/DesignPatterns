@@ -6,7 +6,14 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("He");
+            LoginContext c = new LoginContext();
+            c.init();
+            c.failed();
+            c.failed();
+            c.success();
+            c.failed();
+            c.failed();
+            c.failed();            
         }
     }
 }

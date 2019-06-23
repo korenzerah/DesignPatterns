@@ -1,3 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
+
 namespace DesignPatterns
 {
     class DBConnections {
@@ -10,7 +13,7 @@ namespace DesignPatterns
         this._connections = new List<SingleConnection>();
     }
 
-    public static GetInstance() {
+    public static DBConnections GetInstance() {
 
         if (singletonDBConnections != null)
                 return singletonDBConnections;            
@@ -32,7 +35,7 @@ namespace DesignPatterns
         this._connections.RemoveAt(index);
     }
 
-    public void GetConnection() {
+    public SingleConnection GetConnection() {
         return this._connections[0];
     }
 }   

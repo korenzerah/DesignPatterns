@@ -1,3 +1,4 @@
+using System;
 namespace DesignPatterns {
 class SingleConnection {
     public void OpenConnection() {
