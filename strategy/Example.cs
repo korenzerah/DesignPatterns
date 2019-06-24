@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.strategy;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.strategy
 {
-    class Program
+    class MainOfStrategy
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             DataContainer dd = new DataContainer(new QuickSort());
             dd.Sort();
             dd.setSortStrategy(new BubbleSort());
