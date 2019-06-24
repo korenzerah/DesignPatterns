@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.builder;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.builder
 {
-    class Program
+    class MainOfBuilder
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             ChickenSaladBuilder c = new ChickenSaladBuilder();
             c.buildSalad();
             Console.WriteLine(c.ToString());            
