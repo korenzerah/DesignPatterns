@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.prototype;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.prototype
 {
-    class Program
+    class MainOfPrototype
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             Circle m = new Circle(new Point(1, 2), 55);
             Console.WriteLine(m.area);
             giveMeYourCircle(m.Clone());
