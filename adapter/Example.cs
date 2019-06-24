@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.adapter;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.adapter
 {
-    class Program
+    class MainOfAdapter
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             D3Shape s = new D3Shape();
             Adapter3Dto2D a = new Adapter3Dto2D();
             Draw(a, s);
