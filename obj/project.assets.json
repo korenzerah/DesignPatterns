@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\DesignPatterns\\DesignPatterns.csproj",
+      "projectUniqueName": "P:\\Projects\\DesignPatterns\\DesignPatterns.csproj",
       "projectName": "DesignPatterns",
-      "projectPath": "E:\\Projects\\DesignPatterns\\DesignPatterns.csproj",
+      "projectPath": "P:\\Projects\\DesignPatterns\\DesignPatterns.csproj",
       "packagesPath": "C:\\Users\\koren\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\DesignPatterns\\obj\\",
+      "outputPath": "P:\\Projects\\DesignPatterns\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
