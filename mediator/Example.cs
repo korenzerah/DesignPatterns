@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.mediator;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.mediator
 {
-    class Program
+    class MainOfMediator
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             StockMediator bursa = new StockMediator();
             GoogleCompany c1 = new GoogleCompany(bursa);
             TadiranCompany c2 = new TadiranCompany(bursa);
