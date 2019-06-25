@@ -1,5 +1,5 @@
 ﻿using System;
-using DesignPatterns.visitor;
+using DesignPatterns.proxy;
 
 namespace DesignPatterns
 {
@@ -7,12 +7,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {            
-            Shape c = new Circle();
-            c.Accept(new Paint());
-            c.Accept(new Shadow());
-            c = new Rectangle();
-            c.Accept(new Paint());
-            c.Accept(new Shadow());
+            ProxyATM a = new ProxyATM();
+            a.getTotal();
         }
     }
 }
