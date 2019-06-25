@@ -1,14 +1,13 @@
-﻿using System;
-using DesignPatterns.facade;
+using System;
 using DesignPatterns.facade.interfaces;
 using DesignPatterns.facade.proxies;
 
-namespace DesignPatterns
+namespace DesignPatterns.facade
 {
-    class Program
+    class MainOfFacade
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             IUserProxy pr = LoginFactory.LoginToFacadeSystem("elal");
             (pr as CompanyFacadeProxy).createFlight("1");
             (pr as CompanyFacadeProxy).createFlight("2");
