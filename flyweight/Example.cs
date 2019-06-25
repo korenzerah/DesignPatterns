@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.flyweight;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.flyweight
 {
-    class Program
+    class MainOfFlyWeight
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             CoffeeShop s = new CoffeeShop();
             Order c = new Order();
             c.addItem("Coffee", 5);
