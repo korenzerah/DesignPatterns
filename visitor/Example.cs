@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.visitor;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.visitor
 {
-    class Program
+    class MainOfVisitor
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             Shape c = new Circle();
             c.Accept(new Paint());
             c.Accept(new Shadow());
