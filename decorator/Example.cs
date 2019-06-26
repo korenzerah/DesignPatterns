@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.decorator;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.decorator
 {
-    class Program
+    class MainOfDecorator
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             BasePizza p = new BasePizza();
             Console.WriteLine(p.getDetails());
             Console.WriteLine(p.getPrice());
