@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.memento;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.memento
 {
-    class Program
+    class MainOfMemento
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             TextEditor te = new TextEditor();
             te.modifyText("koren");
             te.modifyText("koren zerah");
