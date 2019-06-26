@@ -1,13 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using DesignPatterns.abstract_factory;
 
-namespace DesignPatterns
+namespace DesignPatterns.abstract_factory
 {
-    class Program
+    class MainOfAbstractFactory
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             Data d = new Data();
             List<DocumentComponentBase> excelDoc = createDoc(new ExcelFactory(), d);
             List<DocumentComponentBase> wordDOc = createDoc(new WordFactory(), d);
