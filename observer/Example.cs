@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.observer;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.observer
 {
-    class Program
+    class MainOfObserver
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             StockObserver so = new StockObserver();
             StockGrabber sg = new StockGrabber();
             sg.setApplePrice(50);
