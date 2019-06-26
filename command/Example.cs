@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.command;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.command
 {
-    class Program
+    class MainOfCommand
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             WindowsMachine wm = new WindowsMachine();
             OperationCleanUpService ocus = new OperationCleanUpService();
             OperationInvoker toi = new TurnOnInvoker(new TurnOnMachine(wm));
