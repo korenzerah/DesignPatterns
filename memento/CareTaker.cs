@@ -12,7 +12,7 @@ namespace DesignPatterns.memento
         }
 
         public Memento getLastMomento() {
-            Memento m = (Memento)this.mems.Last();
+            Memento m = (Memento)this.mems.Last(); 
             this.mems.RemoveAt(this.mems.Count - 1);
             return m;
         }
