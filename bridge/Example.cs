@@ -14,7 +14,7 @@ namespace DesignPatterns.bridge
             rc.prevPressed();
             rc.device = m;
             rc.pressOn();
-            rc.nextPressed();
+            rc.nextPressed(); 
         }
     }
 }
