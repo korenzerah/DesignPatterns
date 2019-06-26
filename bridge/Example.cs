@@ -1,12 +1,11 @@
-﻿using System;
-using DesignPatterns.bridge;
+using System;
 
-namespace DesignPatterns
+namespace DesignPatterns.bridge
 {
-    class Program
+    class MainOfBridge
     {
-        static void Main(string[] args)
-        {            
+        static void Example(string[] args)
+        {
             TV t = new TV();
             Memir m = new Memir();
             RemoteControl rc = new RemoteControl(t);
