@@ -7,6 +7,7 @@ using DesignPatterns.exam.exercise3;
 using DesignPatterns.exam.exercise5;
 using DesignPatterns.exam.exercise6;
 using DesignPatterns.exam.exercise8;
+using DesignPatterns.exam.exercise9;
 using DesignPatterns.exercise2;
 using DesignPatterns.iterator;
 
@@ -62,10 +63,29 @@ namespace DesignPatterns
             // powerNumbers.ForEach(x => Console.WriteLine(x.calculation));            
 
             // Example exercise 8
-            DeadLiftWorkoutBuilder deadliftBuilder = new DeadLiftWorkoutBuilder();
-            deadliftBuilder.buildWorkout();
-            SquatWorkoutBuilder sb = new SquatWorkoutBuilder();
-            sb.buildWorkout();
+            // DeadLiftWorkoutBuilder deadliftBuilder = new DeadLiftWorkoutBuilder();
+            // deadliftBuilder.buildWorkout();
+            // SquatWorkoutBuilder sb = new SquatWorkoutBuilder();
+            // sb.buildWorkout();
+
+            // Example exercise 9
+            CarMakerFactoryBase normal = new NormalCarFactory();
+            normal.createAC();
+            normal.createBatery();
+            normal.createEngine();
+            normal.createLightSystem();
+            normal.createSeats();
+            normal.createTin();
+            normal.createWheels();
+
+            CarMakerFactoryBase hybrid = new HybridCarFactory   ();
+            hybrid.createAC();
+            hybrid.createBatery();
+            hybrid.createEngine();
+            hybrid.createLightSystem();
+            hybrid.createSeats();
+            hybrid.createTin();
+            hybrid.createWheels();
         }
 
         static bool isEvenRecursionExercise2(Component c) {
