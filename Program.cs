@@ -4,6 +4,7 @@ using DesignPatterns.abstract_factory;
 using DesignPatterns.exam.exercise1;
 using DesignPatterns.exam.exercise1.states;
 using DesignPatterns.exam.exercise3;
+using DesignPatterns.exam.exercise5;
 using DesignPatterns.exam.exercise6;
 using DesignPatterns.exercise2;
 using DesignPatterns.iterator;
@@ -44,16 +45,19 @@ namespace DesignPatterns
             // ProxyCarController pcc = new ProxyCarController(cc);
             // pcc.DisplayLocation();
 
-            // Example exercise 6
-            FlyWeightPower fwp = new FlyWeightPower();
-            fwp.addPowerNumber(2, 3);
-            fwp.addPowerNumber(3, 2);
-            fwp.addPowerNumber(3, 3);
-            fwp.addPowerNumber(11, 2);
-            PowerNumberCalculator calc = new PowerNumberCalculator();
-            List<PowerNumber> powerNumbers = calc.calculatePowerNumbers(fwp);
-            powerNumbers.ForEach(x => Console.WriteLine(x.calculation));
-            
+            // Example exercise 5
+            LogFactory.GetLogWritter(LogEnum.Info).WriteLog();
+            LogFactory.GetLogWritter(LogEnum.Error).WriteLog();
+            LogFactory.GetLogWritter(LogEnum.Fatal).WriteLog();
+            // // Example exercise 6
+            // FlyWeightPower fwp = new FlyWeightPower();
+            // fwp.addPowerNumber(2, 3);
+            // fwp.addPowerNumber(3, 2);
+            // fwp.addPowerNumber(3, 3);
+            // fwp.addPowerNumber(11, 2);
+            // PowerNumberCalculator calc = new PowerNumberCalculator();
+            // List<PowerNumber> powerNumbers = calc.calculatePowerNumbers(fwp);
+            // powerNumbers.ForEach(x => Console.WriteLine(x.calculation));            
         }
 
         static bool isEvenRecursionExercise2(Component c) {
