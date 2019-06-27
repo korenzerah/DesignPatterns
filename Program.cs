@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using DesignPatterns.abstract_factory;
+using DesignPatterns.exam.exercise1;
+using DesignPatterns.exam.exercise1.states;
+using DesignPatterns.iterator;
 
 namespace DesignPatterns
 {
@@ -8,19 +11,12 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {            
-            Data d = new Data();
-            List<DocumentComponentBase> excelDoc = createDoc(new ExcelFactory(), d);
-            List<DocumentComponentBase> wordDOc = createDoc(new WordFactory(), d);
-        }
-
-        private static List<DocumentComponentBase> createDoc(DocumentMakerFactoryBase factory, Data d) {
-            List<DocumentComponentBase> result = new List<DocumentComponentBase>();
-            result.Add(factory.createBody(d));
-            result.Add(factory.createCaption(d));
-            result.Add(factory.createFooter(d));
-            result.Add(factory.createGraphics(d));
-
-            return result;
+            GameContext g = new GameContext(new DuringGame());
+            g.SpaceshipHit(20);
+            g.SpaceshipHit(20);
+            g.SpaceshipHit(2);
+            g.SpaceshipHit(15);
+            g.SpaceshipHit(5);
         }
     }
 }
