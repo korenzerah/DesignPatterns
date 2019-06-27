@@ -4,6 +4,7 @@ using DesignPatterns.abstract_factory;
 using DesignPatterns.exam.exercise1;
 using DesignPatterns.exam.exercise1.states;
 using DesignPatterns.exam.exercise10;
+using DesignPatterns.exam.exercise12;
 using DesignPatterns.exam.exercise3;
 using DesignPatterns.exam.exercise5;
 using DesignPatterns.exam.exercise6;
@@ -88,17 +89,25 @@ namespace DesignPatterns
             // hybrid.createTin();
             // hybrid.createWheels();
 
-            // Example exercise 10
-            WindowHandler h1 = new WindowHandler();
-            WindowHandler h2 = new Shadow();
-            WindowHandler h3 = new TickingBackground();
-            WindowHandler h4 = new D3Light();
-            WindowHandler h5 = new ColorfulBorder();
-            h1.setNext(h2);
-            h2.setNext(h3);
-            h3.setNext(h4);
-            h4.setNext(h5);
-            h1.handle();
+            // // Example exercise 10
+            // WindowHandler h1 = new WindowHandler();
+            // WindowHandler h2 = new Shadow();
+            // WindowHandler h3 = new TickingBackground();
+            // WindowHandler h4 = new D3Light();
+            // WindowHandler h5 = new ColorfulBorder();
+            // h1.setNext(h2);
+            // h2.setNext(h3);
+            // h3.setNext(h4);
+            // h4.setNext(h5);
+            // h1.handle();
+
+            // Example exercise 12
+            OfficeComputerPackBuilder b1 = new OfficeComputerPackBuilder();
+            b1.buildComputerPack();
+            SalonComputerPackBulider b2 = new SalonComputerPackBulider();
+            b2.buildComputerPack();
+            GamingComputerPackBulider b3 = new GamingComputerPackBulider();
+            b3.buildComputerPack();
         }
 
         static bool isEvenRecursionExercise2(Component c) {
