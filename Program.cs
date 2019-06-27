@@ -6,6 +6,7 @@ using DesignPatterns.exam.exercise1.states;
 using DesignPatterns.exam.exercise3;
 using DesignPatterns.exam.exercise5;
 using DesignPatterns.exam.exercise6;
+using DesignPatterns.exam.exercise8;
 using DesignPatterns.exercise2;
 using DesignPatterns.iterator;
 
@@ -45,10 +46,11 @@ namespace DesignPatterns
             // ProxyCarController pcc = new ProxyCarController(cc);
             // pcc.DisplayLocation();
 
-            // Example exercise 5
-            LogFactory.GetLogWritter(LogEnum.Info).WriteLog();
-            LogFactory.GetLogWritter(LogEnum.Error).WriteLog();
-            LogFactory.GetLogWritter(LogEnum.Fatal).WriteLog();
+            // // Example exercise 5
+            // LogFactory.GetLogWritter(LogEnum.Info).WriteLog();
+            // LogFactory.GetLogWritter(LogEnum.Error).WriteLog();
+            // LogFactory.GetLogWritter(LogEnum.Fatal).WriteLog();
+
             // // Example exercise 6
             // FlyWeightPower fwp = new FlyWeightPower();
             // fwp.addPowerNumber(2, 3);
@@ -58,6 +60,12 @@ namespace DesignPatterns
             // PowerNumberCalculator calc = new PowerNumberCalculator();
             // List<PowerNumber> powerNumbers = calc.calculatePowerNumbers(fwp);
             // powerNumbers.ForEach(x => Console.WriteLine(x.calculation));            
+
+            // Example exercise 8
+            DeadLiftWorkoutBuilder deadliftBuilder = new DeadLiftWorkoutBuilder();
+            deadliftBuilder.buildWorkout();
+            SquatWorkoutBuilder sb = new SquatWorkoutBuilder();
+            sb.buildWorkout();
         }
 
         static bool isEvenRecursionExercise2(Component c) {
