@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DesignPatterns.abstract_factory;
 using DesignPatterns.exam.exercise1;
 using DesignPatterns.exam.exercise1.states;
+using DesignPatterns.exam.exercise3;
 using DesignPatterns.exercise2;
 using DesignPatterns.iterator;
 
@@ -21,14 +22,26 @@ namespace DesignPatterns
             // g.SpaceshipHit(5);
 
             // Example exercise 2
-            Composite root = new Composite(2);
-            Composite child = new Composite(2);
-            child.addChild(new Leaf(2));
-            root.addChild(child);
-            root.addChild(new Leaf(2));
-            root.addChild(new Leaf(8));
-            Console.WriteLine(root.Sum());
-            Console.WriteLine(isEvenRecursionExercise2(root));
+            // Composite root = new Composite(2);
+            // Composite child = new Composite(2);
+            // child.addChild(new Leaf(2));
+            // root.addChild(child);
+            // root.addChild(new Leaf(2));
+            // root.addChild(new Leaf(8));
+            // Console.WriteLine(root.Sum());
+            // Console.WriteLine(isEvenRecursionExercise2(root));
+
+            // // Example exercise 3
+            // Mercedes c1 = new Mercedes();
+            // BMW c2 = new BMW();
+            // CarController cc = new CarController(c1);
+            // c1.StartDriving();
+            // c1.TurnLeft();
+            // cc.car = c2;
+            // cc.TurnRight();
+            // cc.DisplayLocation();
+            // ProxyCarController pcc = new ProxyCarController(cc);
+            // pcc.DisplayLocation();
         }
 
         static bool isEvenRecursionExercise2(Component c) {
